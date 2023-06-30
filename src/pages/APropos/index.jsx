@@ -1,11 +1,18 @@
-import logo from '../../assets/logo.svg';
+import styles from './aPropos.module.css';
+import homeBannerImg from '../../assets/homeBannerImg.png';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
-function Footer() {
+function APropos() {
     return (
         <div>
-            <img src={logo} alt="logo du site kasa" className="kasa-logo" />
+            <div>
+                <main>
+                    <h1>Page A Propos</h1>
+                </main>
+            </div>
         </div>
     );
 }
 
-export default Footer;
+export default APropos;

@@ -1,0 +1,16 @@
+.kasaFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+}
+
+.kasaLogo {
+    fill: transparent;
+}
+
+.kasaFooterText {
+    color: white;
+}

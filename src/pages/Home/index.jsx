@@ -1,12 +1,9 @@
+import style from './home.module.css';
 import homeBannerImg from '../../assets/homeBannerImg.png';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 function Home() {
     return (
         <div>
-            <Header></Header>
-
             <div>
                 <h1> Chez Vous, partout et ailleurs </h1>
                 <img
@@ -15,7 +12,7 @@ function Home() {
                     className="kasaHomeBannerImg"
                 />
             </div>
-            <Footer></Footer>
+            <main></main>
         </div>
     );
 }
