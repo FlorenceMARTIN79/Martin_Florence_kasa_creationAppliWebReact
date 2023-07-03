@@ -1,4 +1,16 @@
+:root {
+    --primary-color: #ff6060;
+}
+
+body {
+    max-width: 1240px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem 5rem;
+}
+
 * {
     font-family: 'Montserrat';
-    color: #ff6060;
+    color: var(--primary-color);
 }

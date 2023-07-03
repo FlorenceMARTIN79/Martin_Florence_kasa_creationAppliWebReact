@@ -1,17 +1,11 @@
 import styles from './header.module.css';
-import logoColor from '../../assets/logo/logoColor.svg';
 import { Link } from 'react-router-dom';
+import Logo from '../Logo';
 
 function Header() {
     return (
         <main className={styles.kasaHeader}>
-            <Link to="/">
-                <img
-                    src={logoColor}
-                    alt="logo du site kasa"
-                    className="kasaLogo"
-                />
-            </Link>
+            <Logo />
             <nav className={styles.headerNav}>
                 <Link to="/">Accueil</Link>
                 <Link to="/APropos">A Propos</Link>

@@ -6,11 +6,11 @@ function Home() {
         <div>
             <div>
                 <h1> Chez Vous, partout et ailleurs </h1>
-                <img
+                {/*<img
                     src={homeBannerImg}
                     alt="falaise au bord de la mer"
                     className="kasaHomeBannerImg"
-                />
+    />*/}
             </div>
             <main></main>
         </div>
