@@ -1,19 +1,15 @@
-import style from './home.module.css';
-import homeBannerImg from '../../assets/homeBannerImg.png';
+import styles from './home.module.css';
+import Banner from '../../components/Banner';
+import Card from '../../components/Card';
 
 function Home() {
     return (
-        <div>
-            <div>
-                <h1> Chez Vous, partout et ailleurs </h1>
-                {/*<img
-                    src={homeBannerImg}
-                    alt="falaise au bord de la mer"
-                    className="kasaHomeBannerImg"
-    />*/}
-            </div>
-            <main></main>
-        </div>
+        <main className={styles.homeMain}>
+            <Banner></Banner>;
+            <section className={styles.rentals}>
+                <Card className={styles.rentalCard}></Card>
+            </section>
+        </main>
     );
 }
 

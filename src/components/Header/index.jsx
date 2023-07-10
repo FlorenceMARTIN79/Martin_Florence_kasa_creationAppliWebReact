@@ -4,13 +4,13 @@ import Logo from '../Logo';
 
 function Header() {
     return (
-        <main className={styles.kasaHeader}>
+        <div className={styles.kasaHeader}>
             <Logo />
             <nav className={styles.headerNav}>
                 <Link to="/">Accueil</Link>
                 <Link to="/APropos">A Propos</Link>
             </nav>
-        </main>
+        </div>
     );
 }
 

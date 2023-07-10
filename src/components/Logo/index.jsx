@@ -1,14 +1,13 @@
 import styles from './logo.module.css';
 import { Link } from 'react-router-dom';
 
-function LogoColor() {
+function Logo() {
     return (
         <Link to="/">
             <svg
                 width="211"
                 height="68"
                 viewBox="0 0 211 68"
-                fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 className={styles.logoShaping}
             >
@@ -22,4 +21,4 @@ function LogoColor() {
     );
 }
 
-export default LogoColor;
+export default Logo;

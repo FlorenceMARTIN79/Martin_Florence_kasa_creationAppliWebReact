@@ -1,0 +1,29 @@
+.homeBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 190px;
+    position: relative;
+}
+
+.bannerTitle {
+    color: #ffff;
+    z-index: 2;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.bannerImg {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    filter: brightness(60%);
+    border-radius: 15px;
+}
