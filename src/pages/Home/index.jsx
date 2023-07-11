@@ -5,9 +5,9 @@ import Card from '../../components/Card';
 function Home() {
     return (
         <main className={styles.homeMain}>
-            <Banner></Banner>;
+            <Banner></Banner>
             <section className={styles.rentals}>
-                <Card className={styles.rentalCard}></Card>
+                <Card className={styles.rentalCard} id="logementsTest"></Card>
             </section>
         </main>
     );
