@@ -25,11 +25,23 @@ function Card() {
     console.table(card);
 
     return (
-        <ul>
-            {card.map((rental, index) => (
-                <li key={`${rental.title}-${index}`}>{rental.title}</li>
-            ))}
-        </ul>
+        <main className={styles.homeMain}>
+            <div className={styles.homeGallery}>
+                {card.map((rental, index) => (
+                    <div className={styles.cardStyle}>
+                        <a
+                            href="http://localhost:3000/APropos"
+                            key={`${rental.title}-${index}`}
+                            className={styles.cardA}
+                        >
+                            <span className={styles.cardText}>
+                                {rental.title}
+                            </span>
+                        </a>
+                    </div>
+                ))}
+            </div>
+        </main>
     );
 }
 

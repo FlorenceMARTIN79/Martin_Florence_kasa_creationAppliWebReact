@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #ff6060;
+    --primary-color: /*#ff6060*/ rgb(255, 96, 100);
 }
 
 body {
