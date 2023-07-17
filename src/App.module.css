@@ -1,14 +1,24 @@
-:root {
+#root {
     --primary-color: /*#ff6060*/ rgb(255, 96, 100);
+    min-height: 100vh;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     max-width: 1240px;
-    margin: auto;
+    margin: 0;
     padding: 2rem 5rem;
+    min-height: 1vh;
+    --primary-color: /*#ff6060*/ rgb(255, 96, 100);
+}
+
+.mainContent {
+    flex: 1;
 }
 
 * {
     font-family: 'Montserrat';
     color: var(--primary-color);
+    max-height: 100%;
 }

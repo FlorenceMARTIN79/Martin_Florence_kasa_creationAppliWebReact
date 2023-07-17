@@ -1,0 +1,32 @@
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 142.6%;
+    width: 100%;
+    height: 2.94rem;
+    display: flex;
+    border-radius: 0.31rem;
+    margin: 1em 0;
+}
+
+.collapseButtonContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1em;
+}
+
+.collapseButtonTitle {
+    display: flex;
+    color: #fff;
+}
+
+.vectorImg {
+    width: 1em;
+    display: flex;
+}

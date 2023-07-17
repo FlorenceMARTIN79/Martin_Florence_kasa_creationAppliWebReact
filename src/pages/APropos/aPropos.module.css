@@ -1,0 +1,24 @@
+header {
+    width: 100%;
+    height: 13.9375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aProposImg {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 142.6%;
+}

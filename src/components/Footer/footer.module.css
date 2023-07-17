@@ -5,10 +5,16 @@
     align-items: center;
     background-color: #000000;
     color: white;
+    height: 210px;
 }
 
-.kasaLogo {
-    fill: transparent;
+.logoContener {
+    max-height: 100%;
+}
+
+.footerKasaLogo {
+    /*fill: transparent;*/
+    height: 10px;
 }
 
 .kasaFooterText {

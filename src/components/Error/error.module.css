@@ -1,0 +1,22 @@
+.errorPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.errorTitle {
+    font-size: 10rem;
+    margin-bottom: 0.1em;
+}
+
+.errorMain {
+    font-size: 36px;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 2em;
+}
+
+.errorLink {
+    margin-bottom: 10em;
+}

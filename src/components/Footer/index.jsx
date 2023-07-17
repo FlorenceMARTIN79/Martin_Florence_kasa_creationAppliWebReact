@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <div className={styles.kasaFooter}>
-            <Link to="/">
+            <Link to="/" className={styles.logoContener}>
                 <img
                     src={logoWhite}
                     alt="logo du site kasa"
-                    className="kasaLogo"
+                    className="footerKasaLogo"
                 />
             </Link>
             <span className={styles.kasaFooterText}>
