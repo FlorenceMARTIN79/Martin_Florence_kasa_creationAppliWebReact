@@ -16,7 +16,7 @@ function APropos() {
                 <main>
                     <div>
                         <Collapse label="Fiabilité">
-                            <p>
+                            <p className={styles.collapseOpenContent}>
                                 Les annonces postées sur Kasa garantissent une
                                 fiabilité totale. Les photos sont conformes aux
                                 logements, et toutes les informations sont
@@ -24,7 +24,7 @@ function APropos() {
                             </p>
                         </Collapse>
                         <Collapse label="Respect">
-                            <p>
+                            <p className={styles.collapseOpenContent}>
                                 La bienveillance fait partie des valeurs
                                 fondatrices de Kasa. Tout comportement
                                 discriminatoire ou de perturbation du voisinage
@@ -32,7 +32,7 @@ function APropos() {
                             </p>
                         </Collapse>
                         <Collapse label="Service">
-                            <p>
+                            <p className={styles.collapseOpenContent}>
                                 Nos équipes se tiennent à votre disposition pour
                                 vous fournir une expérience parfaite. N'hésitez
                                 pas à nous contacter si vous avez la moindre
@@ -40,7 +40,7 @@ function APropos() {
                             </p>
                         </Collapse>
                         <Collapse label="Sécurité">
-                            <p>
+                            <p className={styles.collapseOpenContent}>
                                 La sécurité est la priorité de Kasa. Aussi bien
                                 pour nos hôtes que pour les voyageurs, chaque
                                 logement correspond aux critères de sécurité

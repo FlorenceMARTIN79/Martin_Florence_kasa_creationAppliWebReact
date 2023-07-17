@@ -1,3 +1,21 @@
+.collapseArea {
+    margin: 1em;
+    border: red;
+}
+
+.collapseOpen {
+    background-color: #f6f6f6;
+    margin: 0;
+    text-align: justify;
+    border-radius: 0.31rem;
+}
+
+.collapseOpenContener {
+    overflow: hidden;
+    max-height: 0;
+    /*transition: max-height 0.15s ease-out;*/
+}
+
 button {
     background-color: var(--primary-color);
     color: #fff;
@@ -9,7 +27,11 @@ button {
     height: 2.94rem;
     display: flex;
     border-radius: 0.31rem;
-    margin: 1em 0;
+    &:focus + .collapseOpenContener {
+        transition: max-height 5s ease-out;
+        max-height: 500px;
+        border: red 5px solid;
+    }
 }
 
 .collapseButtonContent {

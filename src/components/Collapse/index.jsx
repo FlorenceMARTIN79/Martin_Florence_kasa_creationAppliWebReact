@@ -9,7 +9,7 @@ function Collapse(props) {
     };
 
     return (
-        <div>
+        <div className={styles.collapseArea}>
             <button onClick={toggle}>
                 <div className={styles.collapseButtonContent}>
                     <span className={styles.collapseButtonTitle}>
@@ -22,7 +22,11 @@ function Collapse(props) {
                     />
                 </div>
             </button>
-            <div>{open && <div>{props.children}</div>}</div>
+            <div className={styles.collapseOpenContener}>
+                {open && (
+                    <div className={styles.collapseOpen}>{props.children}</div>
+                )}
+            </div>
         </div>
     );
 }

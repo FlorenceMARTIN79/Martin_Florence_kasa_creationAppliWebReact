@@ -15,10 +15,8 @@ header {
     border-radius: 1.5rem;
 }
 
-button {
-    background-color: var(--primary-color);
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 142.6%;
+.collapseOpenContent {
+    margin: 0;
+    padding: 1em;
+    border-radius: 0.31rem;
 }
