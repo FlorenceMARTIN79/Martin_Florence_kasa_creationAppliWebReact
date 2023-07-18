@@ -11,6 +11,8 @@ body {
     padding: 2rem 5rem;
     min-height: 1vh;
     --primary-color: /*#ff6060*/ rgb(255, 96, 100);
+
+    --secondary-color: #f6f6f6;
 }
 
 .mainContent {
