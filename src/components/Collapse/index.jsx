@@ -1,11 +1,14 @@
 import styles from './collapse.module.css';
-import { useState } from 'react';
-import vector from '../../assets/vector.svg';
+import { useState, useRef } from 'react';
+import vectorToOpen from '../../assets/vectorToOpen.svg';
 
 function Collapse(props) {
-    const [open, setOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const contentRef = useRef();
+
     const toggle = () => {
-        setOpen(!open);
+        setIsOpen(!isOpen);
     };
 
     return (
@@ -16,16 +19,23 @@ function Collapse(props) {
                         {props.label}
                     </span>
                     <img
-                        src={vector}
+                        src={vectorToOpen}
                         alt="chevron"
                         className={styles.vectorImg}
                     />
                 </div>
             </button>
-            <div className={styles.collapseOpenContener}>
-                {open && (
-                    <div className={styles.collapseOpen}>{props.children}</div>
-                )}
+
+            <div
+                className={styles.collapseContentDetail}
+                ref={contentRef}
+                style={
+                    isOpen
+                        ? { height: contentRef.current.scrollHeight + 'px' }
+                        : { height: '0px' }
+                }
+            >
+                {props.children}
             </div>
         </div>
     );
