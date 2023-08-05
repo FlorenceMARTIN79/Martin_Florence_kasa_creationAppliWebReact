@@ -25,17 +25,23 @@ function Collapse(props) {
                     />
                 </div>
             </button>
-
-            <div
-                className={styles.collapseContentDetail}
-                ref={contentRef}
-                style={
-                    isOpen
-                        ? { height: contentRef.current.scrollHeight + 'px' }
-                        : { height: '0px' }
-                }
-            >
-                {props.children}
+            <div className={styles.collapseContent}>
+                <div
+                    className={styles.collapseContentDetail}
+                    ref={contentRef}
+                    style={
+                        isOpen
+                            ? {
+                                  height:
+                                      contentRef.current.scrollHeight +
+                                      20 +
+                                      'px',
+                              }
+                            : { height: '0px' }
+                    }
+                >
+                    {props.children}
+                </div>
             </div>
         </div>
     );
