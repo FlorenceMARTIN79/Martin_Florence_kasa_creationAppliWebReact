@@ -3,27 +3,35 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    border-radius: /*15px*/ 1.5rem;
 }
 
 .homeGallery {
     background-color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
-    margin: 20px;
+    border-radius: 1.5rem;
 }
 
 .cardStyle {
     background: linear-gradient(rgba(255, 255, 100, 0), rgba(0, 0, 0, 0.3));
     background-color: var(--primary-color);
-    width: 300px;
-    height: 300px;
-    margin: 20px 20px;
-    border-radius: /*15px*/ 1.5rem;
+    width: min(30%, 21.25rem);
+    height: min(30vw, 21.25rem);
+    box-sizing: border-box;
+    margin: 1rem;
+    border-radius: 0.625rem;
     display: flex;
     align-items: flex-end;
+}
+
+@media screen and (max-width: 1299px) {
+    .cardStyle {
+        width: 17rem;
+        height: 17rem;
+        margin: 0.6rem;
+    }
 }
 
 .cardA {
@@ -32,7 +40,8 @@
     justify-content: flex-end;
     align-items: baseline;
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 1.125rem;
+    font-weight: 500;
     width: 40%;
     height: 100%;
     margin: 1rem;

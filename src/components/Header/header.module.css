@@ -8,7 +8,6 @@
 }
 
 .kasaLogo {
-    max-width: 210.32px;
 }
 
 .headerNav {
@@ -16,6 +15,17 @@
     width: 10rem;
     justify-content: space-between;
     font-size: 1.2rem;
+    background: green;
+}
+
+@media screen and (max-width: 769px) {
+    .kasaLogo {
+    }
+
+    .headerNav {
+        font-size: 0.5rem;
+        background: blue;
+    }
 }
 
 .headerNav > a {

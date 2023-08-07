@@ -6,7 +6,6 @@
 body {
     display: flex;
     flex-direction: column;
-    max-width: 1240px;
     margin: 0;
     padding: 2rem 5rem;
     min-height: 1vh;
@@ -15,7 +14,7 @@ body {
     --secondary-color: #f6f6f6;
 }
 
-.mainContent {
+mainContent {
     flex: 1;
 }
 
