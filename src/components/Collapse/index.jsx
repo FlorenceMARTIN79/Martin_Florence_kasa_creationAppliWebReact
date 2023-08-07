@@ -1,6 +1,7 @@
 import styles from './collapse.module.css';
 import { useState, useRef } from 'react';
 import vectorToOpen from '../../assets/vectorToOpen.svg';
+import vectorToClose from '../../assets/vectorToClose.svg';
 
 function Collapse(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,19 @@ function Collapse(props) {
                     <span className={styles.collapseButtonTitle}>
                         {props.label}
                     </span>
-                    <img
-                        src={vectorToOpen}
-                        alt="chevron"
-                        className={styles.vectorImg}
-                    />
+                    {isOpen ? (
+                        <img
+                            src={vectorToClose}
+                            alt="chevron"
+                            className={styles.vectorImg}
+                        />
+                    ) : (
+                        <img
+                            src={vectorToOpen}
+                            alt="chevron"
+                            className={styles.vectorImg}
+                        />
+                    )}
                 </div>
             </button>
             <div className={styles.collapseContent}>
