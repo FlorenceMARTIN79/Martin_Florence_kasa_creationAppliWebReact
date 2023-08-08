@@ -26,12 +26,10 @@ function Card() {
         <main className={styles.homeMain}>
             <div className={styles.homeGallery}>
                 {card.map((rental, index) => {
-                    console.log(rental);
                     return (
-                        <div className={styles.cardStyle}>
+                        <div className={styles.cardStyle} key={rental.id}>
                             <a
                                 href="http://localhost:3000/APropos"
-                                key={`${rental.title}-${index}`}
                                 className={styles.cardA}
                             >
                                 <span className={styles.cardText}>
