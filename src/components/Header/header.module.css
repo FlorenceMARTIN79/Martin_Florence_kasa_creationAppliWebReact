@@ -7,21 +7,19 @@
     margin-bottom: 2.5rem;
 }
 
-.kasaLogo {
-}
-
 .headerNav {
     display: flex;
-    width: 10rem;
+    width: 23%;
     justify-content: space-between;
     font-size: 1.2rem;
+}
+
+.activeLink {
     background: green;
+    border: 2px red solid;
 }
 
 @media screen and (max-width: 769px) {
-    .kasaLogo {
-    }
-
     .headerNav {
         font-size: 0.5rem;
         background: blue;
@@ -31,4 +29,8 @@
 .headerNav > a {
     text-decoration: none;
     font-weight: bold;
+}
+
+[aria-current] {
+    text-decoration: underline !important;
 }

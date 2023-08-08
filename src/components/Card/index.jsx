@@ -22,8 +22,6 @@ function Card() {
             });
     }, []);
 
-    console.table(card);
-
     return (
         <main className={styles.homeMain}>
             <div className={styles.homeGallery}>
