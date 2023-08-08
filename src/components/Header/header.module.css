@@ -14,23 +14,18 @@
     font-size: 1.2rem;
 }
 
-.activeLink {
-    background: green;
-    border: 2px red solid;
-}
-
-@media screen and (max-width: 769px) {
-    .headerNav {
-        font-size: 0.5rem;
-        background: blue;
-    }
-}
-
 .headerNav > a {
     text-decoration: none;
     font-weight: bold;
 }
 
 [aria-current] {
-    text-decoration: underline !important;
+    /*text-decoration: underline !important;*/
+    border-bottom: 1px solid var(--primary-color);
+}
+
+@media screen and (max-width: 769px) {
+    .headerNav {
+        font-size: 0.5rem;
+    }
 }

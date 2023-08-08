@@ -25,19 +25,22 @@ function Card() {
     return (
         <main className={styles.homeMain}>
             <div className={styles.homeGallery}>
-                {card.map((rental, index) => (
-                    <div className={styles.cardStyle}>
-                        <a
-                            href="http://localhost:3000/APropos"
-                            key={`${rental.title}-${index}`}
-                            className={styles.cardA}
-                        >
-                            <span className={styles.cardText}>
-                                {rental.title}
-                            </span>
-                        </a>
-                    </div>
-                ))}
+                {card.map((rental, index) => {
+                    console.log(rental);
+                    return (
+                        <div className={styles.cardStyle}>
+                            <a
+                                href="http://localhost:3000/APropos"
+                                key={`${rental.title}-${index}`}
+                                className={styles.cardA}
+                            >
+                                <span className={styles.cardText}>
+                                    {rental.title}
+                                </span>
+                            </a>
+                        </div>
+                    );
+                })}
             </div>
         </main>
     );

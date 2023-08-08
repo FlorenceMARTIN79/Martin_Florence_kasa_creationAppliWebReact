@@ -27,14 +27,6 @@
     align-items: flex-end;
 }
 
-@media screen and (max-width: 1299px) {
-    .cardStyle {
-        width: 17rem;
-        height: 17rem;
-        margin: 0.6rem;
-    }
-}
-
 .cardA {
     display: flex;
     flex-direction: column;
@@ -51,4 +43,12 @@
 .cardText {
     color: white !important;
     word-wrap: break-word;
+}
+
+@media screen and (max-width: 1299px) {
+    .cardStyle {
+        width: 17rem;
+        height: 17rem;
+        margin: 0.6rem;
+    }
 }
