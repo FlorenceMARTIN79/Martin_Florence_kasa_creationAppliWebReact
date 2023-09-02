@@ -12,9 +12,7 @@ function Card() {
                 }
             })
             .then(function (logements) {
-                console.table(logements.length);
                 setCard(logements);
-                console.table(card);
             })
 
             .catch(function (err) {
@@ -29,9 +27,14 @@ function Card() {
                     return (
                         <div className={styles.cardStyle} key={rental.id}>
                             <a
-                                href="http://localhost:3000/APropos"
+                                href="http://localhost:3000/Logement.html?id="
                                 className={styles.cardA}
                             >
+                                <img
+                                    src={rental.cover}
+                                    alt="logement"
+                                    className={styles.rentalCover}
+                                />
                                 <span className={styles.cardText}>
                                     {rental.title}
                                 </span>

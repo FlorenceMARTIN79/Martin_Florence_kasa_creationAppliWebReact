@@ -7,7 +7,7 @@ function Home() {
         <main className={styles.homeMain}>
             <Banner></Banner>
             <section className={styles.rentals}>
-                <Card className={styles.rentalCard} id="logementsTest"></Card>
+                <Card className={styles.rentalCard}></Card>
             </section>
         </main>
     );
