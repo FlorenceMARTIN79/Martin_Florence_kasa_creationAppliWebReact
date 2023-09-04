@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './card.module.css';
 
 function Card() {
@@ -26,8 +27,8 @@ function Card() {
                 {card.map((rental, index) => {
                     return (
                         <div className={styles.cardStyle} key={rental.id}>
-                            <a
-                                href="http://localhost:3000/Logement.html?id="
+                            <Link
+                                to={`/Logement/${rental.id}`}
                                 className={styles.cardA}
                             >
                                 <img
@@ -38,7 +39,7 @@ function Card() {
                                 <span className={styles.cardText}>
                                     {rental.title}
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     );
                 })}

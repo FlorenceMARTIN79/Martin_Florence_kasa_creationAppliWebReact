@@ -1,3 +1,4 @@
+import { useParams } from 'react-router-dom';
 import styles from './logement.module.css';
 import homeBannerImg from '../../assets/homeBannerImg.png';
 import Slideshow from '../../components/Slideshow';
