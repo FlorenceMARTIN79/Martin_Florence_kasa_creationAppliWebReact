@@ -1,19 +1,24 @@
 import { useParams } from 'react-router-dom';
 import styles from './logement.module.css';
-import homeBannerImg from '../../assets/homeBannerImg.png';
 import Slideshow from '../../components/Slideshow';
 
 function Logement() {
-    return (
-        <div>
+    const { id } = useParams();
+
+    if (1 == 1) {
+        return (
             <div>
-                <main>
-                    <h1>Page Logement</h1>
-                    <Slideshow></Slideshow>
-                </main>
+                <div>
+                    <main>
+                        <h1>Page Logement {id}</h1>
+                        <Slideshow></Slideshow>
+                    </main>
+                </div>
             </div>
-        </div>
-    );
+        );
+    } else {
+        return <span>No !</span>;
+    }
 }
 
 export default Logement;

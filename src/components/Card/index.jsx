@@ -1,30 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useFetch } from '../../utils/hooks';
 import { Link } from 'react-router-dom';
 import styles from './card.module.css';
 
 function Card() {
-    const [card, setCard] = useState([]);
+    const { data, error } = useFetch(`http://localhost:3000/logements.json`);
 
-    useEffect(() => {
-        fetch('logements.json')
-            .then(function (res) {
-                if (res.ok) {
-                    return res.json();
-                }
-            })
-            .then(function (logements) {
-                setCard(logements);
-            })
-
-            .catch(function (err) {
-                console.log('erreur de récupération des données logement');
-            });
-    }, []);
+    let dataArr = Array.from(data);
 
     return (
         <main className={styles.homeMain}>
             <div className={styles.homeGallery}>
-                {card.map((rental, index) => {
+                {dataArr.map((rental, index) => {
                     return (
                         <div className={styles.cardStyle} key={rental.id}>
                             <Link
