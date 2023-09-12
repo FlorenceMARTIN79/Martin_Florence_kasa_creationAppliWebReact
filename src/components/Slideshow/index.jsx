@@ -1,7 +1,7 @@
 import styles from './slideshow.module.css';
 
 function Slideshow() {
-    return <div></div>;
+    return <img src={currentRental.cover} />;
 }
 
 export default Slideshow;
