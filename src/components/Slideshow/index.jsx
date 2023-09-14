@@ -1,9 +1,26 @@
 import styles from './slideshow.module.css';
 
-function Slideshow() {
+function Slideshow(data) {
+    console.log(data.data);
+
+    let dataArr = Array.from(data.data);
+    console.table(dataArr);
+    let result = Array.isArray(dataArr);
+    console.log(result);
     return (
-        <div>
-            <img src={currentRental.cover} />;
+        <div className={styles.slideshow}>
+            <div>
+                {dataArr.map((item, index) => {
+                    return (
+                        <img
+                            src={item}
+                            alt={'une vue de la location'}
+                            key={index}
+                            className={styles.slideshowPicture}
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
 }
