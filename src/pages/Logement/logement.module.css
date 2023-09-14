@@ -1,0 +1,34 @@
+.rentalPresentation {
+    width: 100%;
+    display: flex;
+}
+
+.rentalTitle {
+    font-size: 1rem;
+    width: 80%;
+}
+
+.rentalTags {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0 1rem 0 1rem;
+    border-radius: 0.65rem;
+}
+
+.hostPhoto {
+    border-radius: 50%;
+}
+
+.rentalDetails {
+    display: flex;
+    flex-direction: row;
+}
+
+.rentalDetailBlock {
+    width: 50%;
+}
+
+p Collapse {
+    background-color: black /*var(--secondary-color)*/;
+    border-radius: 0 0.65rem 0.65rem 0;
+}
