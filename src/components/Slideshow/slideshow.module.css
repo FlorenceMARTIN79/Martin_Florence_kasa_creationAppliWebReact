@@ -1,14 +1,58 @@
 .slideshow {
     display: flex;
-
     justify-content: center;
     align-items: center;
+    position: relative;
     max-width: 100%;
+    height: 25.93rem;
+    border: solid 3px purple;
 }
 
 .slideshowPicture {
     display: flex;
+    position: absolute;
+    border: solid 3px orange;
+    left: 0;
+    z-index: 0;
+    top: 0;
+}
 
+.pictureHidden {
+    display: none;
+}
+
+.currentPicture {
+    border: solid 2px red;
+}
+
+.pictureDisplayed {
+    border: solid 2px salmon;
+    object-fit: cover;
     overflow: hidden;
-    max-width: 25%;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.slideShowVector {
+    position: absolute;
+    max-height: 4.95em;
+    z-index: 2;
+}
+
+.vectorBack {
+    left: 1rem;
+}
+
+.vectorForward {
+    right: 1rem;
+}
+
+.pictureIndicator {
+    height: 10%;
+}
+
+.indicatorDisplayed {
+    position: absolute;
+    z-index: 4;
+    color: red;
 }

@@ -14,12 +14,8 @@ function Logement() {
 
     let currentRental = dataArr.find((elt) => elt.id === id);
 
-    console.log(currentRental);
-    console.table(currentRental);
-
     if (currentRental !== undefined) {
         const rentalPictures = currentRental.pictures;
-        console.table(rentalPictures);
 
         return (
             <div>
