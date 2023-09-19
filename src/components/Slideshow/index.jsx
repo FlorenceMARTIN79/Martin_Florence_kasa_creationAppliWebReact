@@ -6,17 +6,29 @@ import vectorForward from '../../assets/vectorForward.svg';
 function Slideshow(data) {
     const [slide, setSlide] = useState(0);
 
+    const nextPicture = () => {
+        setSlide(slide === dataArr.length - 1 ? 0 : slide + 1);
+    };
+
+    const previousPicture = () => {
+        setSlide(slide === 0 ? dataArr.length - 1 : slide - 1);
+    };
+
+    const pictureNumber = slide + 1;
+
     let dataArr = Array.from(data.data);
 
     console.table(dataArr);
 
     return (
         <div className={styles.slideshow}>
-            <img
-                src={vectorBack}
-                alt="flêche retour"
-                className={`${styles.slideShowVector} ${styles.vectorBack}`}
-            />
+            <button onClick={previousPicture} className={styles.arrowButton}>
+                <img
+                    src={vectorBack}
+                    alt="flêche retour"
+                    className={`${styles.slideShowVector} ${styles.vectorBack}`}
+                />
+            </button>
             {dataArr.map((pictureUrl, index) => {
                 const isCurrentPicture =
                     slide === index
@@ -36,19 +48,22 @@ function Slideshow(data) {
                             key={`${pictureUrl}-${index}`}
                             className={`${styles.slideshowPicture} ${isCurrentPicture}`}
                         />
+
                         <span
                             className={`${styles.pictureIndicator} ${isCurrentIndicator}`}
                         >
-                            {index}/{dataArr.length}
+                            {pictureNumber}/{dataArr.length}
                         </span>
                     </div>
                 );
             })}
-            <img
-                src={vectorForward}
-                alt="flêche en avant"
-                className={`${styles.slideShowVector} ${styles.vectorForward}`}
-            />
+            <button onClick={nextPicture} className={styles.arrowButton}>
+                <img
+                    src={vectorForward}
+                    alt="flêche en avant"
+                    className={`${styles.slideShowVector} ${styles.vectorForward}`}
+                />
+            </button>
         </div>
     );
 }

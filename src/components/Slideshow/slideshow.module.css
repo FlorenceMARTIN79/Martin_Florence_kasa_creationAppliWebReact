@@ -1,6 +1,6 @@
 .slideshow {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     max-width: 100%;
@@ -23,20 +23,33 @@
 
 .currentPicture {
     border: solid 2px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pictureDisplayed {
-    border: solid 2px salmon;
     object-fit: cover;
     overflow: hidden;
     max-width: 100%;
     min-height: 100%;
 }
 
+.arrowButton {
+    display: flex;
+    align-items: center;
+    z-index: 4;
+    border: solid 2px green;
+    height: 30%;
+    width: 4rem;
+    background: none;
+    margin: 0 0.5em 0 0.5rem;
+}
+
 .slideShowVector {
     position: absolute;
     max-height: 4.95em;
-    z-index: 2;
+    z-index: 1;
 }
 
 .vectorBack {
@@ -52,7 +65,9 @@
 }
 
 .indicatorDisplayed {
+    display: flex;
+    align-items: center;
     position: absolute;
     z-index: 4;
-    color: red;
+    color: blue;
 }
