@@ -17,6 +17,27 @@ function Logement() {
     if (currentRental !== undefined) {
         const rentalPictures = currentRental.pictures;
 
+        const tags = currentRental.tags;
+        const listTags = tags.map((tag, index) => {
+            return (
+                <span className={styles.tag} key={`${tag}-${index}`}>
+                    {tag}
+                </span>
+            );
+        });
+
+        const equipments = currentRental.equipments;
+        const listEquipments = equipments.map((equipment, index) => {
+            return (
+                <span
+                    className={styles.equipment}
+                    key={`${equipment}-${index}`}
+                >
+                    {equipment}
+                </span>
+            );
+        });
+
         return (
             <div>
                 <main>
@@ -29,15 +50,15 @@ function Logement() {
                             <span className={styles.rentalLocation}>
                                 {currentRental.location}
                             </span>
-                            <div className={styles.rentalTags}>
-                                {currentRental.tags}
-                            </div>
+                            <span className={styles.rentalTags}>
+                                {listTags}
+                            </span>
                         </div>
                         <div className={styles.rentalHostInformation}>
                             <div className={styles.rentalHost}>
-                                <span className={styles.hostName}>
+                                <div className={styles.hostName}>
                                     {currentRental.host.name}
-                                </span>
+                                </div>
                                 <img
                                     src={currentRental.host.picture}
                                     alt="propriétaire de la location"
@@ -60,7 +81,7 @@ function Logement() {
                         <div className={styles.rentalDetailBlock}>
                             <Collapse label="Equipements">
                                 <p className={styles.equipmentsDetail}>
-                                    {currentRental.equipments}
+                                    {listEquipments}
                                 </p>
                             </Collapse>
                         </div>

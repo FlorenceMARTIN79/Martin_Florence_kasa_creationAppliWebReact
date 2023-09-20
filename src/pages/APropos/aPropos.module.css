@@ -6,6 +6,10 @@ header {
     align-items: center;
 }
 
+.aProposMain {
+    padding: 1em;
+}
+
 .aProposImg {
     max-width: 100%;
     width: 100%;

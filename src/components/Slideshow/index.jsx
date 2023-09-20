@@ -18,8 +18,6 @@ function Slideshow(data) {
 
     let dataArr = Array.from(data.data);
 
-    console.table(dataArr);
-
     return (
         <div className={styles.slideshow}>
             <button onClick={previousPicture} className={styles.arrowButton}>

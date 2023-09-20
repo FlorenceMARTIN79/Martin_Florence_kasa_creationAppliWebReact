@@ -5,16 +5,18 @@
     position: relative;
     max-width: 100%;
     height: 25.93rem;
-    border: solid 3px purple;
 }
 
 .slideshowPicture {
     display: flex;
     position: absolute;
-    border: solid 3px orange;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
     left: 0;
     z-index: 0;
     top: 0;
+    border-radius: 0.625rem;
 }
 
 .pictureHidden {
@@ -22,7 +24,6 @@
 }
 
 .currentPicture {
-    border: solid 2px red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,14 +33,13 @@
     object-fit: cover;
     overflow: hidden;
     max-width: 100%;
-    min-height: 100%;
+    height: 100%;
 }
 
 .arrowButton {
     display: flex;
     align-items: center;
     z-index: 4;
-    border: solid 2px green;
     height: 30%;
     width: 4rem;
     background: none;
@@ -50,6 +50,7 @@
     position: absolute;
     max-height: 4.95em;
     z-index: 1;
+    cursor: pointer;
 }
 
 .vectorBack {
@@ -64,10 +65,22 @@
     height: 10%;
 }
 
+.indicatorHidden {
+    display: none;
+}
+
 .indicatorDisplayed {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
-    z-index: 4;
-    color: blue;
+    z-index: 3;
+    width: 95%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    color: white;
 }

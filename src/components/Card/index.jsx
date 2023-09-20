@@ -6,7 +6,6 @@ function Card() {
     const { data, error } = useFetch(`http://localhost:3000/logements.json`);
 
     let dataArr = Array.from(data);
-    console.table(dataArr);
 
     return (
         <main className={styles.homeMain}>

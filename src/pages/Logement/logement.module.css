@@ -1,34 +1,86 @@
 .rentalPresentation {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.rentalInformation {
+    width: 55%;
 }
 
 .rentalTitle {
-    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: 550;
     width: 80%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.rentalLocation {
+    display: flex;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 .rentalTags {
-    color: white;
-    background-color: var(--primary-color);
-    padding: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
     border-radius: 0.65rem;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.3em 1em;
+    margin-right: 1rem;
+    width: 6em;
+    border-radius: 0.625rem;
+}
+
+.rentalHostInformation {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.rentalHost {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-height: 5vh;
+    margin: 0;
+}
+
+.hostName {
+    width: 50%;
+    align-self: center;
+    text-align: right;
 }
 
 .hostPhoto {
     border-radius: 50%;
+    height: 3.5vh;
+    width: auto;
 }
 
 .rentalDetails {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .rentalDetailBlock {
-    width: 50%;
+    width: 47%;
 }
 
-p Collapse {
-    background-color: black /*var(--secondary-color)*/;
-    border-radius: 0 0.65rem 0.65rem 0;
+.equipment {
+    display: flex;
+    background-color: black;
 }

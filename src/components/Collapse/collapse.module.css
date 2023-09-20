@@ -1,5 +1,5 @@
 .collapseArea {
-    margin: 1em;
+    margin: 1em 0 1em 0;
     background-color: var(--secondary-color);
     border-radius: 0.31rem;
 }
