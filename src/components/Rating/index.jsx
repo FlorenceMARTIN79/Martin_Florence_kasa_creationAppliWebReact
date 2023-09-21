@@ -4,7 +4,8 @@ import starColor from '../../assets/starColor.jpg';
 
 function Rating(data) {
     let currentRating = data.data;
-    console.log(currentRating);
+
+    const maxRating = 5;
 
     function isColored(ratingNumber) {
         return currentRating >= ratingNumber
@@ -12,42 +13,23 @@ function Rating(data) {
             : `${styles.starHidden}`;
     }
 
+    const emptyStars = Array.from({ length: maxRating }).map((_, index) => (
+        <img key={index} src={starGrey} alt="étoile vide" />
+    ));
+
+    const fullStars = Array.from({ length: maxRating }).map((_, index) => (
+        <img
+            key={index}
+            src={starColor}
+            alt="étoile remplie"
+            className={`${isColored(index + 1)}`}
+        />
+    ));
+
     return (
         <div className={styles.rentalRating}>
-            <div className={styles.greyStars}>
-                <img src={starGrey} alt="étoile vide" />
-                <img src={starGrey} alt="étoile vide" />
-                <img src={starGrey} alt="étoile vide" />
-                <img src={starGrey} alt="étoile vide" />
-                <img src={starGrey} alt="étoile vide" />
-            </div>
-            <div className={styles.coloredStars}>
-                <img
-                    src={starColor}
-                    alt="étoile remplie"
-                    className={`${isColored(1)}`}
-                />
-                <img
-                    src={starColor}
-                    alt="étoile remplie"
-                    className={`${isColored(2)}`}
-                />
-                <img
-                    src={starColor}
-                    alt="étoile remplie"
-                    className={`${isColored(3)}`}
-                />
-                <img
-                    src={starColor}
-                    alt="étoile remplie"
-                    className={`${isColored(4)}`}
-                />
-                <img
-                    src={starColor}
-                    alt="étoile remplie"
-                    className={`${isColored(5)}`}
-                />
-            </div>
+            <div className={styles.greyStars}>{emptyStars}</div>
+            <div className={styles.coloredStars}>{fullStars}</div>
         </div>
     );
 }
