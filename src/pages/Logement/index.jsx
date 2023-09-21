@@ -4,6 +4,7 @@ import styles from './logement.module.css';
 import Slideshow from '../../components/Slideshow';
 import Collapse from '../../components/Collapse';
 import Error from '../../components/Error';
+import Rating from '../../components/Rating';
 
 function Logement() {
     const { id } = useParams();
@@ -16,6 +17,7 @@ function Logement() {
 
     if (currentRental !== undefined) {
         const rentalPictures = currentRental.pictures;
+        const rentalRating = currentRental.rating;
 
         const tags = currentRental.tags;
         const listTags = tags.map((tag, index) => {
@@ -65,9 +67,7 @@ function Logement() {
                                     className={styles.hostPhoto}
                                 />
                             </div>
-                            <div className={styles.rentalRating}>
-                                {currentRental.rating}
-                            </div>
+                            <Rating data={rentalRating} />
                         </div>
                     </div>
                     <div className={styles.rentalDetails}>

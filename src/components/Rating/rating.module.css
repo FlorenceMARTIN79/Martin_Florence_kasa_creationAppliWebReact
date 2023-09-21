@@ -1,0 +1,21 @@
+.rentalRating {
+    position: relative;
+}
+
+.greyStars {
+    position: absolute;
+    top: 0;
+}
+
+.coloredStars {
+    position: absolute;
+    top: 0;
+}
+
+.starDisplayed {
+    border: none;
+}
+
+.starHidden {
+    visibility: hidden;
+}
