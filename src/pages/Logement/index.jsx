@@ -81,7 +81,7 @@ function Logement() {
                             </Collapse>
                         </div>
                         <div className={styles.rentalDetailBlock}>
-                            <Collapse label="Equipements">
+                            <Collapse label="Équipements">
                                 <p className={styles.equipmentsDetail}>
                                     {listEquipments}
                                 </p>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './card.module.css';
 
 function Card() {
-    const { data, error } = useFetch(`http://localhost:3000/logements.json`);
+    const { data } = useFetch(`http://localhost:3000/logements.json`);
 
     let dataArr = Array.from(data);
 
