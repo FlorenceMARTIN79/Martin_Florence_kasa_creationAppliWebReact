@@ -36,6 +36,11 @@
     height: 100%;
 }
 
+.arrowHidden {
+    display: none;
+    cursor: default;
+}
+
 .arrowButton {
     display: flex;
     align-items: center;

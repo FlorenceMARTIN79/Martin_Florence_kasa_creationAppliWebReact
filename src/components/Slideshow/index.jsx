@@ -17,14 +17,23 @@ function Slideshow(data) {
     const pictureNumber = slide + 1;
 
     let dataArr = Array.from(data.data);
+    console.log(dataArr.length);
+
+    const isUniquePicture =
+        dataArr.length <= 1
+            ? `${styles.arrowHidden}`
+            : `${styles.arrowDisplayed}`;
 
     return (
         <div className={styles.slideshow}>
-            <button onClick={previousPicture} className={styles.arrowButton}>
+            <button
+                onClick={previousPicture}
+                className={`${styles.arrowButton} ${isUniquePicture}`}
+            >
                 <img
                     src={vectorBack}
                     alt="flêche retour"
-                    className={`${styles.slideShowVector} ${styles.vectorBack}`}
+                    className={`${styles.slideShowVector} ${styles.vectorBack} ${isUniquePicture}`}
                 />
             </button>
             {dataArr.map((pictureUrl, index) => {
@@ -55,11 +64,14 @@ function Slideshow(data) {
                     </div>
                 );
             })}
-            <button onClick={nextPicture} className={styles.arrowButton}>
+            <button
+                onClick={nextPicture}
+                className={`${styles.arrowButton} ${isUniquePicture}`}
+            >
                 <img
                     src={vectorForward}
                     alt="flêche en avant"
-                    className={`${styles.slideShowVector} ${styles.vectorForward}`}
+                    className={`${styles.slideShowVector} ${styles.vectorForward} ${isUniquePicture}`}
                 />
             </button>
         </div>
