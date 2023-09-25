@@ -13,7 +13,7 @@ function APropos() {
                         className={styles.aProposImg}
                     />
                 </header>
-                <main>
+                <main className={styles.aProposMain}>
                     <Collapse label="Fiabilité">
                         <p>
                             Les annonces postées sur Kasa garantissent une
