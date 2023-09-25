@@ -17,7 +17,6 @@ function Slideshow(data) {
     const pictureNumber = slide + 1;
 
     let dataArr = Array.from(data.data);
-    console.log(dataArr.length);
 
     const isUniquePicture =
         dataArr.length <= 1

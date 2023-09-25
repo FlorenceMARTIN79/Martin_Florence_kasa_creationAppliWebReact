@@ -19,7 +19,7 @@ mainContent {
 }
 
 * {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: var(--primary-color);
     max-height: 100%;
 }
