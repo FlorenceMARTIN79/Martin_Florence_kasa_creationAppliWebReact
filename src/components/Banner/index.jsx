@@ -6,13 +6,15 @@ function Banner() {
         <div className={styles.homeBanner}>
             <h1 className={styles.bannerTitle}>
                 {' '}
-                Chez Vous, partout et ailleurs{' '}
+                Chez vous, partout et ailleurs{' '}
             </h1>
-            <img
-                src={homeBannerImg}
-                alt="falaise au bord de la mer"
-                className={styles.bannerImg}
-            />
+            <div className={styles.bannerImgLayout}>
+                <img
+                    src={homeBannerImg}
+                    alt="falaise au bord de la mer"
+                    className={styles.bannerImg}
+                />
+            </div>
         </div>
     );
 }

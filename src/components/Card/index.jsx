@@ -22,9 +22,11 @@ function Card() {
                                     alt="logement"
                                     className={styles.rentalCover}
                                 />
-                                <span className={styles.cardText}>
-                                    {rental.title}
-                                </span>
+                                <div className={styles.cartTextContainer}>
+                                    <span className={styles.cardText}>
+                                        {rental.title}
+                                    </span>
+                                </div>
                             </Link>
                         </div>
                     );

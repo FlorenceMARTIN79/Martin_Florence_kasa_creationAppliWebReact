@@ -24,6 +24,5 @@
 }
 
 [aria-current] {
-    /*text-decoration: underline !important;*/
-    border-bottom: 1px solid var(--primary-color);
+    text-decoration: underline !important;
 }

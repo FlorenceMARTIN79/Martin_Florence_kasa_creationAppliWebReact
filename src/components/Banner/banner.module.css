@@ -1,31 +1,39 @@
 .homeBanner {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
-    height: 13.9375rem;
+    height: 6.94rem;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
 }
 
 .bannerTitle {
-    text-align: center;
     color: #ffff;
     z-index: 2;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 500;
+    width: 63%;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.bannerImgLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+
+    border-radius: 0.625rem;
 }
 
 .bannerImg {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    max-height: 100%;
+    width: 160vw;
     object-fit: cover;
-    overflow: hidden;
-    position: absolute;
-    z-index: 0;
-    filter: brightness(60%);
-    border-radius: /*15px*/ 1.5rem;
+    filter: brightness(75%);
 }
