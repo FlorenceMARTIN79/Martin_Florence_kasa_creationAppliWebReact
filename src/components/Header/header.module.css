@@ -9,10 +9,10 @@
 
 .headerNav {
     display: flex;
-    width: 23%;
+    width: 40%;
     height: 100%;
-    justify-content: space-between;
-    font-size: 1.2rem;
+    justify-content: space-around;
+    font-size: 0.75rem;
     display: flex;
     align-items: flex-end;
     margin-bottom: 1rem;
@@ -20,16 +20,10 @@
 
 .headerNav > a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 [aria-current] {
     /*text-decoration: underline !important;*/
     border-bottom: 1px solid var(--primary-color);
-}
-
-@media screen and (max-width: 769px) {
-    .headerNav {
-        font-size: 0.5rem;
-    }
 }
