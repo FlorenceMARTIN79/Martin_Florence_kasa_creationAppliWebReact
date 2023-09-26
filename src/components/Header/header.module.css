@@ -1,11 +1,10 @@
 .kasaHeader {
-    height: 68px;
+    height: 2.93rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-    padding: 2rem 5rem;
 }
 
 .headerNav {

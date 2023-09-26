@@ -1,9 +1,10 @@
-.logoShaping {
-    fill: var(--primary-color);
+.logoLayout {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-@media screen and (max-width: 769px) {
-    .logoShaping {
-        max-width: 45%;
-    }
+.logoShaping {
+    fill: var(--primary-color);
+    height: 2.94rem;
 }
