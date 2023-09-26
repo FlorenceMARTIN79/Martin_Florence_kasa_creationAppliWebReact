@@ -5,18 +5,26 @@
     align-items: center;
     background-color: #000000;
     color: white;
-    height: 210px;
+    /*height: 210px;*/
+    min-width: 100%;
+    padding: 3.88rem 0;
 }
 
 .logoContener {
     max-height: 100%;
+    /*margin-bottom: 0.78rem;
+    margin-top: 4.12rem;*/
 }
 
 .footerKasaLogo {
-    /*fill: transparent;*/
-    height: 10px;
+    height: 2.46rem;
 }
 
 .kasaFooterText {
+    padding-top: 1.81rem;
     color: white;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 142.6%;
+    /*margin-bottom: 1.81rem;*/
 }

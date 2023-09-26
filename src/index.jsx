@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <Router>
-            <Header />
+            <Header className={styles.header} />
             <div className={styles.mainContent}>
                 <Routes>
                     <Route path="/" element={<Home />} />

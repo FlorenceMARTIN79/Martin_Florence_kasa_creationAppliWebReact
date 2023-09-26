@@ -7,15 +7,15 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 2rem 5rem;
+
     min-height: 1vh;
     --primary-color: /*#ff6060*/ rgb(255, 96, 100);
 
     --secondary-color: #f6f6f6;
 }
 
-mainContent {
-    flex: 1;
+.mainContent {
+    padding: 2rem 5rem;
 }
 
 * {

@@ -9,7 +9,7 @@ function Footer() {
                 <img
                     src={logoWhite}
                     alt="logo du site kasa"
-                    className="footerKasaLogo"
+                    className={styles.footerKasaLogo}
                 />
             </Link>
             <span className={styles.kasaFooterText}>
