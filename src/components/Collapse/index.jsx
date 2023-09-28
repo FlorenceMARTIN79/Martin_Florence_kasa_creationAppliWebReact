@@ -43,7 +43,7 @@ function Collapse(props) {
                             ? {
                                   height:
                                       contentRef.current.scrollHeight +
-                                      20 +
+                                      5 +
                                       'px',
                               }
                             : { height: '0px' }

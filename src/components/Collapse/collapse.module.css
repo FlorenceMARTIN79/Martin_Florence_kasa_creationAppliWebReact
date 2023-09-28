@@ -9,9 +9,10 @@ button {
     color: #fff;
     border: none;
     font-weight: 500;
-    font-size: 1.5rem;
-    padding: 0.5rem;
+    font-size: 0.82rem;
+    padding: 0.72rem 0.34rem;
     width: 100%;
+    height: 1.87rem;
     display: flex;
     border-radius: 0.31rem;
     cursor: pointer;
@@ -27,7 +28,7 @@ button {
 }
 
 .vectorImg {
-    width: 1em;
+    /*width: 1.4rem;*/
     display: flex;
 }
 
@@ -37,7 +38,7 @@ button {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 1em;
+    padding: 0 0 0 0.5rem;
 }
 
 .collapseContent {
@@ -47,10 +48,19 @@ button {
 }
 
 .collapseContentDetail {
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 0.5rem;
     text-align: justify;
     border-radius: 0.31rem;
     overflow: hidden;
     height: 0px;
     transition: height ease 0.9s;
+}
+
+.collapseContentDetail p {
+    display: flex;
+    flex-direction: column;
+    margin: 0.1rem;
+    padding-top: 1rem;
 }

@@ -84,13 +84,13 @@
 
 .rentalDetails {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
 }
 
 .rentalDetailBlock {
-    width: 47%;
+    /*width: 47%;*/
+    font-size: 0.81rem;
 }
 
 .equipment {

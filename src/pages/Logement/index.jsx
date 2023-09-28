@@ -9,7 +9,7 @@ import Rating from '../../components/Rating';
 function Logement() {
     const { id } = useParams();
 
-    const { data, error } = useFetch(`http://localhost:3000/logements.json`);
+    const { data } = useFetch(`http://localhost:3000/logements.json`);
 
     const dataArr = Array.from(data);
 
