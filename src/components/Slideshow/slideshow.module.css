@@ -4,15 +4,17 @@
     align-items: center;
     position: relative;
     max-width: 100%;
-    height: 25.93rem;
+    height: 15.94rem;
+}
+
+.pictureContainer {
+    display: flex;
 }
 
 .slideshowPicture {
     display: flex;
     position: absolute;
-    max-height: 100%;
-    width: 100%;
-    overflow: hidden;
+    object-fit: cover;
     left: 0;
     z-index: 0;
     top: 0;
@@ -23,17 +25,8 @@
     display: none;
 }
 
-.currentPicture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .pictureDisplayed {
-    object-fit: cover;
-    overflow: hidden;
-    max-width: 100%;
-    height: 100%;
+    display: flex;
 }
 
 .arrowHidden {
@@ -48,22 +41,23 @@
     height: 30%;
     width: 4rem;
     background: none;
-    margin: 0 0.5em 0 0.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .slideShowVector {
     position: absolute;
-    max-height: 4.95em;
+    height: 1.5rem;
     z-index: 1;
     cursor: pointer;
 }
 
 .vectorBack {
-    left: 1rem;
+    left: 0.5rem;
 }
 
 .vectorForward {
-    right: 1rem;
+    right: 0.5rem;
 }
 
 .pictureIndicator {
@@ -75,17 +69,19 @@
 }
 
 .indicatorDisplayed {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: 3;
-    width: 95%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-    color: white;
+    @media screen and (min-width: 481px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 3;
+        width: 95%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        color: white;
+    }
 }

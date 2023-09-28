@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './App.module.css';
 import ReactDOM from 'react-dom/client';
 import KasaRouter from './components/KasaRouter';
 

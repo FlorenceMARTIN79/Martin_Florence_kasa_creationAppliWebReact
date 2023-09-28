@@ -47,14 +47,13 @@ function Slideshow(data) {
                         : `${styles.indicatorHidden}`;
 
                 return (
-                    <div key={index} className={styles.currentPicture}>
+                    <div key={index} className={styles.pictureContainer}>
                         <img
                             src={pictureUrl}
                             alt={'une vue de la location'}
                             key={`${pictureUrl}-${index}`}
                             className={`${styles.slideshowPicture} ${isCurrentPicture}`}
                         />
-
                         <span
                             className={`${styles.pictureIndicator} ${isCurrentIndicator}`}
                         >

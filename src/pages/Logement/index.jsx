@@ -57,6 +57,9 @@ function Logement() {
                             </span>
                         </div>
                         <div className={styles.rentalHostInformation}>
+                            <div className={styles.rating}>
+                                <Rating data={rentalRating} />
+                            </div>
                             <div className={styles.rentalHost}>
                                 <div className={styles.hostName}>
                                     {currentRental.host.name}
@@ -66,9 +69,6 @@ function Logement() {
                                     alt="propriétaire de la location"
                                     className={styles.hostPhoto}
                                 />
-                            </div>
-                            <div className={styles.rating}>
-                                <Rating data={rentalRating} />
                             </div>
                         </div>
                     </div>

@@ -8,9 +8,6 @@ body {
     padding: 1.25rem;
 }
 
-.mainContent {
-}
-
 * {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: var(--primary-color);
