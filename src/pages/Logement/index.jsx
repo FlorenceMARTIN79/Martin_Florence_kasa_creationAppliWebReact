@@ -40,6 +40,11 @@ function Logement() {
             );
         });
 
+        const hostName = currentRental.host.name;
+        const name = hostName.split(' ');
+        const firstName = name[0];
+        const lastName = name[1];
+
         return (
             <div>
                 <main>
@@ -61,8 +66,9 @@ function Logement() {
                                 <Rating data={rentalRating} />
                             </div>
                             <div className={styles.rentalHost}>
-                                <div className={styles.hostName}>
-                                    {currentRental.host.name}
+                                <div className={styles.hostIdentity}>
+                                    <span>{firstName}</span>
+                                    <span>{lastName}</span>
                                 </div>
                                 <img
                                     src={currentRental.host.picture}

@@ -1,6 +1,6 @@
 import styles from './rating.module.css';
-import starGrey from '../../assets/starGrey.jpg';
-import starColor from '../../assets/starColor.jpg';
+import starGrey from '../../assets/starGrey.png';
+import starColor from '../../assets/starColor.png';
 
 function Rating(data) {
     let currentRating = data.data;
@@ -14,7 +14,12 @@ function Rating(data) {
     }
 
     const emptyStars = Array.from({ length: maxRating }).map((_, index) => (
-        <img key={index} src={starGrey} alt="étoile vide" />
+        <img
+            key={index}
+            src={starGrey}
+            alt="étoile vide"
+            className={styles.emptyStar}
+        />
     ));
 
     const fullStars = Array.from({ length: maxRating }).map((_, index) => (

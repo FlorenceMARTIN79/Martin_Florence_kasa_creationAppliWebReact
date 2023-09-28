@@ -15,6 +15,7 @@
     display: flex;
     position: absolute;
     object-fit: cover;
+    max-width: 100%;
     left: 0;
     z-index: 0;
     top: 0;

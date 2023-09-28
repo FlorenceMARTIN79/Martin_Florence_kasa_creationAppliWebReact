@@ -43,7 +43,6 @@
     font-weight: 500;
     text-align: center;
     padding: 0.3em 1em;
-
     margin-right: 0.5rem;
     width: 4.25rem;
     border-radius: 0.4rem;
@@ -53,31 +52,34 @@
     margin: 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .rentalHost {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
-    width: 100%;
+    width: 49%;
+    height: 2.625rem;
     max-height: 5vh;
     margin: 0;
 }
 
-.hostName {
-    width: 50%;
-    align-self: center;
+.hostIdentity {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
     text-align: right;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-right: 2rem;
 }
 
 .hostPhoto {
     border-radius: 50%;
-    height: 3.5vh;
+    height: 2rem;
     width: auto;
-}
-
-.rating {
-    margin-top: 3rem;
 }
 
 .rentalDetails {
