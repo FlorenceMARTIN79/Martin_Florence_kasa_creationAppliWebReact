@@ -7,8 +7,14 @@ function Header() {
         <div className={styles.kasaHeader}>
             <Logo />
             <nav className={styles.headerNav}>
-                <NavLink to="/">ACCUEIL</NavLink>
-                <NavLink to="/APropos">A PROPOS</NavLink>
+                <div className={styles.navLinkContainer}>
+                    <NavLink to="/">ACCUEIL</NavLink>
+                </div>
+                <div className={styles.navLinkContainer}>
+                    <NavLink to="/APropos" className={styles.test}>
+                        A PROPOS
+                    </NavLink>
+                </div>
             </nav>
         </div>
     );
