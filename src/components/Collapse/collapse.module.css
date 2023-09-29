@@ -63,4 +63,6 @@ button {
     flex-direction: column;
     margin: 0.1rem;
     padding-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
 }

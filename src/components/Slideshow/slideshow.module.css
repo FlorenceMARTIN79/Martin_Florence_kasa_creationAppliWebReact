@@ -9,19 +9,24 @@
 
 .pictureContainer {
     display: flex;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0.625rem;
 }
 
 .slideshowPicture {
     display: flex;
     position: absolute;
     object-fit: cover;
-    max-width: 100%;
     min-width: 100%;
-    height: 100%;
-    left: 0;
+    width: 104%;
+    min-height: 100%;
+    height: auto;
     z-index: 0;
-    top: 0;
-    border-radius: 0.625rem;
+    right: 0;
 }
 
 .pictureHidden {

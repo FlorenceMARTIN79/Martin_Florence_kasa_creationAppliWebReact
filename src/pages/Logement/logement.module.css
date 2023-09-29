@@ -88,11 +88,6 @@
     width: 100%;
 }
 
-.rentalDetailBlock {
-    /*width: 47%;*/
-    font-size: 0.81rem;
-}
-
 .equipment {
     display: flex;
 }
