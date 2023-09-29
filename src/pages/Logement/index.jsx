@@ -80,14 +80,14 @@ function Logement() {
                     </div>
                     <div className={styles.rentalDetails}>
                         <div className={styles.rentalDetailBlock}>
-                            <Collapse label="Descripton">
+                            <Collapse label="Descripton" pageTitle="Logement">
                                 <p className={styles.descriptionDetail}>
                                     {currentRental.description}
                                 </p>
                             </Collapse>
                         </div>
                         <div className={styles.rentalDetailBlock}>
-                            <Collapse label="Équipements">
+                            <Collapse label="Équipements" pageTitle="Logement">
                                 <p className={styles.equipmentsDetail}>
                                     {listEquipments}
                                 </p>

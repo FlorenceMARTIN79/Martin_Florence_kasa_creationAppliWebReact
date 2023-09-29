@@ -16,7 +16,13 @@ function Collapse(props) {
         <div className={styles.collapseArea}>
             <button onClick={toggle}>
                 <div className={styles.collapseButtonContent}>
-                    <span className={styles.collapseButtonTitle}>
+                    <span
+                        className={
+                            props.pageTitle === 'APropos'
+                                ? styles.collapseButtonTitleAPropos
+                                : styles.collapseButtonTitle
+                        }
+                    >
                         {props.label}
                     </span>
                     {isOpen ? (
@@ -36,7 +42,11 @@ function Collapse(props) {
             </button>
             <div className={styles.collapseContent}>
                 <div
-                    className={styles.collapseContentDetail}
+                    className={
+                        props.pageTitle === 'APropos'
+                            ? styles.collapseContentDetailAPropos
+                            : styles.collapseContentDetail
+                    }
                     ref={contentRef}
                     style={
                         isOpen

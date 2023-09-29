@@ -18,3 +18,18 @@ header {
     object-fit: cover;
     filter: brightness(0.75);
 }
+
+@media screen and (min-width: 1024px) {
+    header {
+        border-radius: 1.5625rem;
+    }
+
+    .aProposImg {
+        width: 100%;
+    }
+
+    .aProposMain {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+}
