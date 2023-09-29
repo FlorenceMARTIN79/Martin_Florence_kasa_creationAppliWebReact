@@ -91,3 +91,50 @@
 .equipment {
     display: flex;
 }
+
+@media screen and (min-width: 1024px) {
+    .rentalPresentation {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+
+    .rentalInformation {
+        width: 55%;
+    }
+
+    .rentalTitle {
+        font-size: 2.25rem;
+    }
+
+    .rentalLocation {
+        font-size: 1.125rem;
+    }
+
+    .tag {
+        font-size: 0.875rem;
+        width: 7.19rem;
+        border-radius: 0.7rem;
+    }
+
+    .rentalHostInformation {
+        position: relative;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 49%;
+    }
+
+    .rentalHost {
+        height: auto;
+    }
+
+    .hostIdentity {
+        font-size: 1.125rem;
+        width: 100%;
+    }
+
+    .hostPhoto {
+        height: 4rem;
+    }
+}
