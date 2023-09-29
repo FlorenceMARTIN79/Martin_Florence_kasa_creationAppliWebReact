@@ -7,7 +7,7 @@ body {
     --secondary-color: #f6f6f6;
     padding: 1.25rem;
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 1024px) {
         padding: 2.5rem 6.25rem;
     }
 }

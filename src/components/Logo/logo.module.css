@@ -8,7 +8,7 @@
     fill: var(--primary-color);
     height: 2.94rem;
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 1024) {
         height: 4.25rem;
     }
 }

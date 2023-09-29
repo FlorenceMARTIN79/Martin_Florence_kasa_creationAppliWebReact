@@ -11,7 +11,7 @@ function Header() {
                     <NavLink to="/">Accueil</NavLink>
                 </div>
                 <div className={styles.navLinkContainer}>
-                    <NavLink to="/APropos" className={styles.test}>
+                    <NavLink to="/APropos" className={styles.aProposLink}>
                         A Propos
                     </NavLink>
                 </div>
