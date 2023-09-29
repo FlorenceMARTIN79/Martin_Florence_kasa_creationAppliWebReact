@@ -6,17 +6,23 @@
 }
 
 .errorTitle {
-    font-size: 10rem;
+    font-size: 7rem;
+    font-weight: 700;
     margin-bottom: 0.1em;
+    margin-top: 12rem;
 }
 
 .errorMain {
-    font-size: 36px;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-height: 3rem;
     text-align: center;
-    width: 40%;
-    margin-bottom: 2em;
+    margin-bottom: 9rem;
 }
 
 .errorLink {
-    margin-bottom: 10em;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 13em;
 }
