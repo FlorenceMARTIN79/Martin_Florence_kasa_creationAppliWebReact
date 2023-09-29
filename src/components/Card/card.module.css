@@ -7,7 +7,6 @@
 }
 
 .homeGallery {
-    /*background-color: var(--secondary-color);*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -81,4 +80,16 @@
     color: white !important;
     font-weight: 500;
     max-height: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    .homeGallery {
+        background-color: var(--secondary-color);
+        padding-top: 3.5rem;
+    }
+
+    .cardStyle {
+        width: 21.25rem;
+        height: 21.25rem;
+    }
 }

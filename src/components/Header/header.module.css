@@ -5,11 +5,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-
-    @media screen and (min-width: 1024px) {
-        height: 4.25rem;
-        margin-bottom: 3.94rem;
-    }
 }
 
 .headerNav {
@@ -22,23 +17,10 @@
     display: flex;
     align-items: flex-end;
     margin-bottom: 1rem;
-
-    @media screen and (min-width: 1024px) {
-        /*width: 20%;*/
-        justify-content: flex-end;
-        align-items: center;
-        font-size: 1.5rem;
-        font-weight: 500;
-        text-transform: capitalize;
-    }
 }
 
 .navLinkContainer {
     margin-left: 1rem;
-
-    @media screen and (min-width: 1024px) {
-        margin-left: 5rem;
-    }
 }
 
 .navLinkContainer > a {
@@ -48,4 +30,23 @@
 
 [aria-current] {
     text-decoration: underline !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .kasaHeader {
+        height: 4.25rem;
+        margin-bottom: 3.94rem;
+    }
+
+    .headerNav {
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    .navLinkContainer {
+        margin-left: 5rem;
+    }
 }

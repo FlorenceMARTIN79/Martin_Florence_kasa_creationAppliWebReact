@@ -37,3 +37,25 @@
     object-fit: cover;
     filter: brightness(75%);
 }
+
+@media screen and (min-width: 481px) {
+    .homeBanner {
+        align-items: center;
+    }
+
+    .bannerTitle {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .homeBanner {
+        height: 13.94rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .bannerTitle {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
