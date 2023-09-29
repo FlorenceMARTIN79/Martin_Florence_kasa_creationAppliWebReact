@@ -93,3 +93,9 @@
         height: 21.25rem;
     }
 }
+
+@media screen and (min-width: 2000px) {
+    .cardStyle {
+        margin: 1.2rem 0.6rem;
+    }
+}

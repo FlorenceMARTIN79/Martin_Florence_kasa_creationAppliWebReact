@@ -52,10 +52,15 @@
     .homeBanner {
         height: 13.94rem;
         margin-bottom: 2.2rem;
+        margin-top: 2.3rem;
     }
 
     .bannerTitle {
         font-size: 3rem;
         text-align: center;
+    }
+
+    .bannerImgLayout {
+        border-radius: 1.5625rem;
     }
 }
