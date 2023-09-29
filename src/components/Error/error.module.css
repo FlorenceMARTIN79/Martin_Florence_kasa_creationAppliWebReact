@@ -9,11 +9,12 @@
     font-size: 7rem;
     font-weight: 700;
     margin-bottom: 0.1em;
-    margin-top: 12rem;
+    margin-top: 10rem;
 }
 
 .errorMain {
-    line-height: 1.7rem;
+    display: flex;
+    flex-direction: column;
     font-size: 1.2rem;
     font-weight: 500;
     max-height: 3rem;
@@ -25,4 +26,24 @@
     font-size: 0.95rem;
     font-weight: 500;
     margin-bottom: 13em;
+}
+@media screen and (min-width: 1200px) {
+    .errorTitle {
+        font-size: 19rem;
+    }
+
+    .errorMain {
+        display: flex;
+        flex-direction: row;
+        font-size: 2.25rem;
+    }
+
+    .errorMain span {
+        margin-right: 0.3rem;
+        margin-left: 0.3rem;
+    }
+
+    .errorLink {
+        font-size: 1.14rem;
+    }
 }
