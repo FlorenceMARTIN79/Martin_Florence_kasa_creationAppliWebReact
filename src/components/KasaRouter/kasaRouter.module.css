@@ -6,6 +6,10 @@ body {
     --primary-color: rgb(255, 96, 100);
     --secondary-color: #f6f6f6;
     padding: 1.25rem;
+
+    @media screen and (min-width: 481px) {
+        padding: 2.5rem 6.25rem;
+    }
 }
 
 * {

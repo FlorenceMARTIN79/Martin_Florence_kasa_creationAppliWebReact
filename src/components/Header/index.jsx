@@ -8,11 +8,11 @@ function Header() {
             <Logo />
             <nav className={styles.headerNav}>
                 <div className={styles.navLinkContainer}>
-                    <NavLink to="/">ACCUEIL</NavLink>
+                    <NavLink to="/">Accueil</NavLink>
                 </div>
                 <div className={styles.navLinkContainer}>
                     <NavLink to="/APropos" className={styles.test}>
-                        A PROPOS
+                        A Propos
                     </NavLink>
                 </div>
             </nav>
