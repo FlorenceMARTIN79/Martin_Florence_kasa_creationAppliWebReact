@@ -137,4 +137,13 @@
     .hostPhoto {
         height: 4rem;
     }
+
+    .rentalDetails {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rentalDetailBlock {
+        width: 45%;
+    }
 }

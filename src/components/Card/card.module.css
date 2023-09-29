@@ -94,7 +94,7 @@
     }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1900px) {
     .cardStyle {
         margin: 1.2rem 0.6rem;
     }
